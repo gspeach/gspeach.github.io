@@ -1,17 +1,18 @@
 ---
-title: "Layout: Header Image Overlay"
-header:
-  overlay_image: /assets/images/unsplash-image-1.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  cta_url: "https://unsplash.com"
+title: 'Layout: Header Image Overlay'
+date: 2012-03-15 00:00:00 Z
 categories:
-  - Layout
-  - Uncategorized
+- Layout
+- Uncategorized
 tags:
-  - edge case
-  - image
-  - layout
-last_modified_at: 2016-05-02T11:39:01-04:00
+- edge case
+- image
+- layout
+header:
+  overlay_image: "/assets/images/unsplash-image-1.jpg"
+  caption: 'Photo credit: [**Unsplash**](https://unsplash.com)'
+  cta_url: https://unsplash.com
+last_modified_at: 2016-05-02 15:39:01 Z
 ---
 
 {% include base_path %}
