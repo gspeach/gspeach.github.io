@@ -7,6 +7,7 @@ phases:
         - dpkg-reconfigure locales
         - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
         - apt-get install -y nodejs
+        - gem update --system
         - gem install bundler
         - bundle install
         - npm install
