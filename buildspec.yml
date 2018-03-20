@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+        - locale-gen en_US en_US.UTF-8
+        - dpkg-reconfigure locales
+        - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+        - apt-get install -y nodejs
+        - gem install bundler
+        - bundle install
+        - npm install
+        - npm install -g grunt-cli
+  build:
+    commands:
+        - echo "******** CHANGE BRANCH ********"
+        - git checkout $GIT_BRANCH
+        - echo "******** Building Jekyll site ********"
+        - export LC_ALL=en_US.UTF-8
+        - export LC_TYPE=en_US.UTF-8
+        - export LANGUAGE=en_US.UTF-8
+        - export LANG=en_US.UTF-8
+        - jekyll build -t
