@@ -21,3 +21,5 @@ phases:
         - export LANGUAGE=en_US.UTF-8
         - export LANG=en_US.UTF-8
         - jekyll build -t
+        - echo "******** Uploading to S3 ********"
+        - aws s3 sync _site/ s3://coffeenode
